@@ -1,0 +1,325 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*Баннер*/
+
+.main-banner {
+    width: 100%;
+    height: 75vh;
+    background: url("image/template/background2.jpg") center no-repeat;
+    text-align: center;
+    padding-top: 7rem;
+    background-size: cover;
+    background-position: top;
+    font-family: 'Merriweather', serif;
+}
+
+.main-banner h2 {
+    font-size: 2.5rem;
+    color: white;
+}
+
+.main-banner p {
+    margin-top: 0.8rem;
+    margin-bottom: 14rem;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.main-button {
+    background-color: #efe939;
+    border: 1px solid #efe939;
+    text-decoration: none;
+    color: black;
+    padding: 0.7rem 1.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    display: inline-block;
+    font-family: 'Lato', sans-serif;
+}
+
+.main-button-position { /*как расположить кнопку без деформации при сужении экрана, сейчас отстп снизу для р*/
+
+}
+
+.main-button:hover {
+    background: orange;
+    color: white;
+    border: 1px solid orange;
+}
+
+/*Первый элемент*/
+
+.main-introduction {
+    width: 100%;
+    display: flex;
+    margin: 5rem 0;
+    justify-content: center;
+}
+
+.main-introduction-banner-border {
+    max-width: 100%;
+    border: 4px solid yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 19px;
+    height: auto;
+}
+
+
+
+/*.css-adaptive { адаптив для картинки
+    display: block;
+    max-width: 100%;
+    height: auto;
+}*/
+
+
+.main-introduction-content{
+    margin-top: 3rem;
+    margin-left: 3rem
+}
+
+.main-introduction-title {
+    font-size: 2.8rem;
+    margin-top: 5rem;
+    line-height: 1;
+    font-family: 'Merriweather', serif;
+}
+
+.main-introduction h3 {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    font-weight: 400;
+    margin-top: 1.5rem;
+    font-family: 'Merriweather', serif;
+}
+
+.main-introduction p {
+    color: #9b9b9b;
+    font-size: 0.9rem;
+    line-height: 1.7;
+    margin-top: 1.5rem;
+    position: relative;
+    left: 5.5rem;
+    bottom: 3.5rem;
+    font-family: 'Lato', sans-serif;
+}
+
+.fas {
+    display: inline-block;
+    font-size: 60px;
+    color: #D2D2D2;
+    position: relative;
+    top: 2rem;
+}
+
+.content-button-position { /*как поднять кнопку не через поситион*/
+    padding: 0.7rem 2.5rem;
+}
+
+/*.main-text-content {
+    text-align: center;
+    margin: 8rem 5rem;
+}
+
+.main-text-content-free, .main-text-content-remote, .main-text-content-hiring {
+    margin: 3rem;
+}
+
+.main-text-content-free p, .main-text-content-remote p, .main-text-content-hiring p {
+    margin: 0.5rem;
+}
+
+.main-text-content-hiring p a {
+    color: black;
+}
+
+.main-text-content-free h3, .main-text-content-remote h3, .main-text-content-hiring h3 {
+    font-size: 1.5rem;
+}*/
+
+/*Преимущества*/
+
+.main-advantages-list {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.main-advantages-items {
+    margin: 0 7rem;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.main-advantages {
+    background: #f2f3f8;
+    margin: 2rem 0;
+    padding: 4rem 0;
+}
+
+.main-advantages-title {
+    font-weight: 700;
+    font-style: normal;
+    font-family: 'Merriweather', serif;
+    color: #131415;
+    font-size: 45px;
+    line-height: 1;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.main-advantages-number {
+    font-weight: 700;
+    font-family: 'Merriweather', serif;
+    color: #d2d2d2;
+    font-size: 70px;
+    line-height: 0.5;
+    letter-spacing: 1px;
+    position: relative;
+    top: 3rem;
+    left:-7rem;
+}
+
+/*Отзывы*/
+
+.main-reviews {
+    width: 100%;
+    margin: 5rem 0;
+}
+
+.main-reviews h3 {
+    font-weight: 700;
+    font-style: normal;
+    font-family: 'Merriweather', serif;
+    color: #131415;
+    font-size: 45px;
+    line-height: 1;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.main-reviews-center {
+    text-align: center;
+}
+
+.main-reviews-center img {
+    border-radius: 50%;
+    margin-top: 3rem;
+    width: 200px;
+}
+
+.main-reviews-center h4 {
+    color: #131415;
+    text-decoration: none;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 24px;
+    font-family: 'Lato', sans-serif;
+    margin-top: 1.3rem;
+}
+
+.main-reviews-center p {
+    font-family: 'Lato', sans-serif;
+    color: #9b9b9b;
+    line-height: 1.3;
+    letter-spacing: 0;
+    margin-top: 0.7rem;
+}
+
+/*Баннер*/
+
+.additional-banner {
+    margin: 4rem 0;
+    width: 100%;
+}
+
+.main-additional-banner {
+    height: 50vh;
+    background: url("image/banner2.jpg") center center no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.main-additional-content  {
+    color: white;
+    font-family: 'Merriweather', serif;
+}
+
+.main-additional-content h4 {
+    padding-top: 7rem;
+    font-size: 2.8rem;
+}
+
+.main-additional-content p {
+    padding-top: 2rem;
+    font-family: 'Lato', sans-serif;
+    font-size: 0.9rem;
+}
+
+
+
+
+/*@media screen and (max-width: 1160px) {
+    .main-introduction p {
+        line-height: 1.4;
+        margin-right: 6rem; /*какие варианты для смещения текста при сжатии можно еще использовать?*/
+    /*}
+
+    .main-introduction-banner-border {
+        margin-left: 1rem;
+    }
+}
+
+/*@media screen and (max-width: 1030px) { /*как сделать фото адаптивным, кпопку и границу, чтобы сужались вместе с уменьшать экрана*/
+    /*.main-introduction-banner-border {
+        width: 400px;
+        height: 390px;
+        padding: 22px;
+    }
+
+    .main-introduction-banner-border img { /*как сделать фото адаптивным, кпопку и границу, чтобы сужались вместе с уменьшать экрана*/
+      /*  width: 372px;
+        padding: 10px;
+    }
+
+    .main-introduction-title {
+        margin-top: 0;
+    }
+
+    .main-introduction-title {
+        font-size: 1.9rem;
+    }
+
+    .main-introduction h3 {
+        margin-top: 1rem;
+        font-size: 0.95rem;
+    }
+
+    .main-introduction p {
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 866px) {
+    .fas {
+        font-size: 45px;
+    }
+
+    .main-introduction p {
+        bottom: 3rem;
+        left: 4.5rem;
+    }
+}
+
+@media screen and (max-width: 792px) {
+    .main-introduction {
+        display: block;
+    }
+}*/
