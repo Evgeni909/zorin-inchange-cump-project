@@ -36,7 +36,7 @@
         <a href="#">Blog</a>
       </li>
       <li class="main-nav-item">
-        <a href="#">About us</a>
+        <a href="aboutus/index.html">About us</a>
       </li>
     </ul>
   </nav>
@@ -65,11 +65,14 @@
   </ul>
 </nav>!-->
 <main>
-  <div class="main-banner">
+  <section class="main-banner">
+  <div class="main-banner-video" data-vide-bg="video/1"></div>
+  </section>
+  <!--<div class="main-banner">
     <h2>Live in a Villa. Create a Project. Get Funded.</h2>
     <p>We're chanding the world in a team like-minded <br> people from difference countries </p>
     <a class="main-button main-button-position" href="#">Join the camp</a>
-  </div>
+  </div>*/-->
 
   <section class="main-introduction">
     <div class="main-introduction-banner-border">
@@ -253,43 +256,6 @@
     </div>
   </section>
 
-  <script src="js/jquery-3.2.1.min.js"></script>
-  <script>
-      $(function () {
-          //zoom img onclick
-          $(".zoom").click(function () {
-              $(".hover-buttons").css("visibility", "hidden");
-              $(".overlay").addClass("active");
-              $(".popup").addClass("active");
-
-              var activeImg = $(this).attr("href");
-              $(activeImg).fadeIn();
-          });
-          //close img onclick
-          $(".close").click(function () {
-              $(".overlay").removeClass("active");
-              $(".popup").removeClass("active");
-              $(".full-image").hide();
-              $(".hover-buttons").css("visibility", "visible");
-          });
-
-          $(document).on("click", ".overlay", function () {
-              $(".overlay").removeClass("active");
-              $(".popup").removeClass("active");
-              $(".full-image").hide();
-              $(".hover-buttons").css("visibility", "visible");
-          });
-
-          $(".overlay").click(function () {
-              $(".overlay").removeClass("active");
-              $(".popup").removeClass("active");
-              $(".full-image").hide();
-              $(".hover-buttons").css("visibility", "visible");
-          });
-      });
-  </script>
-
-
   <div class="blog">
     <div class="blog__body">
       <div class="blog__title title">From The Blog</div>
@@ -371,6 +337,8 @@
 </footer>
 
 <script src="js/main-js.js"></script>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/jquery.vide.min.js"></script>
 
 </body>
 </html>

@@ -1,0 +1,194 @@
+@import url("../shared.css");
+
+* {
+    box-sizing: border-box;
+}
+
+/*Кнопка*/
+
+.main-button {
+    background-color: #efe939;
+    border: 1px solid #efe939;
+    text-decoration: none;
+    color: black;
+    padding: 0.7rem 1.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    display: inline-block;
+    font-family: 'Lato', sans-serif;
+}
+
+.main-button-position { /*как расположить кнопку без деформации при сужении экрана, сейчас отстп снизу для р*/
+
+}
+
+.main-button:hover {
+    background: orange;
+    color: white;
+    border: 1px solid orange;
+    transition: 0.3s
+}
+
+/*title*/
+.main-title {
+    font-size: 2.8rem;
+    line-height: 1;
+    font-family: 'Merriweather', serif;
+}
+
+/*subtitle*/
+.main-subtitle {
+    font-size: 1.1rem;
+    font-weight: 400;
+    font-family: 'Merriweather', serif;
+}
+
+/*text*/
+.main-text {
+    color: #9b9b9b;
+    font-size: 1rem;
+    font-family: 'Lato', sans-serif;
+}
+
+
+/*первый баннер*/
+
+.background-banner {
+    width: 100%;
+    background-image: url("../image/back2.jpg");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.background-banner h3 {
+    padding: 90px 0 20px 0;
+    color: white;
+    font-size: 2.8rem;
+    line-height: 1;
+    font-family: 'Merriweather', serif;
+}
+
+.background-banner a {
+    color: #efe939;
+    text-decoration: none;
+}
+
+.background-banner a:after {
+    content: "\2192";
+    color: white;
+    padding-left: 0.5rem;
+}
+
+.background-banner a:hover {
+    color: white;
+}
+
+.background-banner span {
+    color: white;
+}
+
+.background-banner a, .background-banner span {
+    display: inline-block;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    padding: 0 0.3rem;
+    padding-bottom: 90px;
+}
+
+/*introduction-about*/
+
+.about-introduction {
+    width: 100%;
+}
+
+.about-introduction-position {
+    display: flex;
+    justify-content: center;
+}
+
+.about-introduction-banner-border {
+    padding: 19px;
+    border: 4px solid yellow;
+    align-items: center;
+    margin: 5rem 0 0 5rem;
+    height: auto;
+}
+
+/*.css-adaptive { адаптив для картинки
+    display: block;
+    max-width: 100%;
+    height: auto;
+}*/
+
+.about-introduction-content {
+    margin-top: 3rem;
+    margin-left: 3rem;
+    width: 600px;
+}
+
+.about-introduction-title {
+    font-size: 2.8rem;
+    margin-top: 3rem;
+    line-height: 1;
+    font-family: 'Merriweather', serif;
+    text-align: center;
+}
+
+.about-introduction p {
+    color: #9b9b9b;
+    font-size: 0.9rem;
+    line-height: 1.7;
+    margin-top: 1.5rem;
+    font-family: 'Lato', sans-serif;
+}
+
+.content-button-position { /*как поднять кнопку не через поситион*/
+    padding: 0.7rem 2.5rem;
+    margin-top: 2rem;
+}
+
+
+
+/*video*/
+
+.main-additional-banner-video {
+    width: 100%;
+    min-height: 400px;
+    margin-top: 5rem;
+}
+
+/*Team*/
+
+.team-position {
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.main-team-position {
+    display: flex;
+    justify-content: center;
+    margin: 4rem 0;
+}
+
+.main-team-content {
+    width: 350px;
+    margin: 0 2rem;
+    text-align: center;
+}
+
+.main-team-content img {
+    border-radius: 50%;
+}
+
+.team-subtitle-position, .team-text-position {
+    margin-top: 1rem;
+
+}
+
+.main-team-content em {
+    display: inline-block;
+    margin-top: 0.3rem;
+}

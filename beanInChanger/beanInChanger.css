@@ -1,1 +1,266 @@
 @import url("../shared.css");
+
+* {
+    box-sizing: border-box;
+}
+
+/*Кнопка*/
+
+.main-button {
+    background-color: #efe939;
+    border: 1px solid #efe939;
+    text-decoration: none;
+    color: black;
+    padding: 0.7rem 1.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    display: inline-block;
+    font-family: 'Lato', sans-serif;
+}
+
+.main-button-position { /*как расположить кнопку без деформации при сужении экрана, сейчас отстп снизу для р*/
+
+}
+
+.main-button:hover {
+    background: orange;
+    color: white;
+    border: 1px solid orange;
+    transition: 0.3s
+}
+
+/*title*/
+.main-title {
+    font-size: 2.8rem;
+    line-height: 1;
+    font-family: 'Merriweather', serif;
+}
+
+/*subtitle*/
+.main-subtitle {
+    font-size: 1.1rem;
+    font-weight: 400;
+    font-family: 'Merriweather', serif;
+}
+
+/*text*/
+.main-text {
+    color: #9b9b9b;
+    font-size: 1rem;
+    font-family: 'Lato', sans-serif;
+}
+
+/*первый баннер*/
+
+.background-banner {
+    width: 100%;
+    background-image: url("../image/back2.jpg");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.background-banner h3 {
+    padding: 90px 0 20px 0;
+    color: white;
+    font-size: 2.8rem;
+    line-height: 1;
+    font-family: 'Merriweather', serif;
+}
+
+.background-banner a {
+    color: #efe939;
+    text-decoration: none;
+}
+
+.background-banner a:after {
+    content: "\2192";
+    color: white;
+    padding-left: 0.5rem;
+}
+
+.background-banner a:hover {
+    color: white;
+}
+
+.background-banner span {
+    color: white;
+}
+
+.background-banner a, .background-banner span {
+    display: inline-block;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    padding: 0 0.3rem;
+    padding-bottom: 90px;
+}
+
+/*первый блок*/
+
+.participation-introduction {
+    width: 100%;
+    display: flex;
+    margin: 5rem 0;
+    justify-content: center;
+}
+
+.participation-introduction-banner-border {
+    max-width: 100%;
+    border: 4px solid yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 19px;
+    height: auto;
+    margin: 3rem 0 0 3rem;
+}
+
+/*.css-adaptive { адаптив для картинки
+    display: block;
+    max-width: 100%;
+    height: auto;
+}*/
+
+.participation-introduction-content {
+    margin-top: 3rem;
+    margin-left: 3rem
+}
+
+.participation-introduction-title {
+    font-size: 2.8rem;
+    margin-top: 3rem;
+    line-height: 1;
+    font-family: 'Merriweather', serif;
+}
+
+.participation-introduction h3 {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    font-weight: 400;
+    margin-top: 1.5rem;
+    font-family: 'Merriweather', serif;
+}
+
+.participation-introduction p {
+    color: #9b9b9b;
+    font-size: 0.9rem;
+    line-height: 1.7;
+    margin-top: 1.5rem;
+    font-family: 'Lato', sans-serif;
+}
+
+.content-button-position { /*как поднять кнопку не через поситион*/
+    padding: 0.7rem 2.5rem;
+    margin-top: 2rem;
+}
+
+/*conditions*/
+
+.conditions-position {
+    text-align: center;
+    padding-top: 5rem;
+}
+
+.main-conditions-position {
+    display: flex;
+    justify-content: center;
+    margin: 4rem 0 5rem 0;
+}
+
+.main-conditions-content {
+    margin: 0 1rem;
+    padding: 2rem;
+    width: 350px;
+    border: 3px solid #f2f3f8;
+}
+
+.main-conditions-content:hover {
+    border: 3px solid yellow;
+    transition: 0.5s;
+}
+
+.main-subtitle-position {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.main-text-position {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+}
+
+/*Accommodation*/
+
+.main-accommodation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2rem 5rem;
+}
+
+.accommodation-image-container {
+    width: 360px;
+}
+
+.accommodation-image-container-position{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.accommodation-image-container img {
+    width: 360px;
+    height: 270px;
+    object-fit: cover;
+}
+
+.accommodation-position {
+    text-align: center;
+    margin: 5rem;
+}
+
+.accommodation-image-container p {
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+}
+
+/*program*/
+
+.main-program {
+    background: #f2f3f8;
+}
+
+.title-program-position {
+    text-align: center;
+    padding-top: 3rem;
+}
+
+.main-program-position {
+    display: flex;
+    justify-content: center;
+    padding: 3rem 0 1.5rem 0;
+}
+
+.main-program-content {
+    margin: 0 1rem;
+    padding: 2rem;
+    width: 350px;
+}
+
+.subtitle-program-position {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.text-program-position, .main-program-list li {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+.main-program-list {
+    list-style-type: none;
+    margin-left: 1rem;
+}
