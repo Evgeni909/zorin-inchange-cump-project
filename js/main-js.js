@@ -29,7 +29,7 @@ $(document).on("click", ".reviews-container .nav span", function() { // slider c
 
 $(function () {
     //zoom img onclick
-    $(".zoom").click(function () {
+    $(".zoom-small, .zoom-large, .zoom-basic").click(function () {
         $(".hover-buttons").css("visibility", "hidden");
         $(".overlay").addClass("active");
         $(".popup").addClass("active");

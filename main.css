@@ -9,8 +9,6 @@
 .main-banner-video {
     width: 100%;
     min-height: 75vh;
-    display: table;
-    text-align: center;
 }
 
 
@@ -64,20 +62,21 @@
 /*Первый элемент*/
 
 .main-introduction {
-    width: 100%;
+    /*max-width: 100%;*/
     display: flex;
-    margin: 5rem 0;
+    margin: 5rem 2rem;
     justify-content: center;
 }
 
-.main-introduction-banner-border {
-    max-width: 100%;
+.main-introduction-image {
     border: 4px solid yellow;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 19px;
-    height: auto;
+    /*height: auto;*/
+    /*max-width: 100%;*/
+}
+
+.main-introduction-image img {
+    /*max-width: 100%;*/
 }
 
 /*.css-adaptive { адаптив для картинки
@@ -87,13 +86,16 @@
 }*/
 
 .main-introduction-content {
-    margin-top: 3rem;
-    margin-left: 3rem
+    /*margin: 8rem 2rem 0 3rem;*/
+    position: relative;
+    top: 8rem;
+    left: 3rem;
+    margin-right: 2rem;
+    width: 40%;
 }
 
 .main-introduction-title {
     font-size: 2.8rem;
-    margin-top: 5rem;
     line-height: 1;
     font-family: 'Merriweather', serif;
 }
@@ -107,14 +109,16 @@
 }
 
 .main-introduction p {
+    margin-right: 2rem;
     color: #9b9b9b;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     line-height: 1.7;
     margin-top: 1.5rem;
     position: relative;
     left: 5.5rem;
     bottom: 3.5rem;
     font-family: 'Lato', sans-serif;
+
 }
 
 .fas {
@@ -127,6 +131,7 @@
 
 .content-button-position { /*как поднять кнопку не через поситион*/
     padding: 0.7rem 2.5rem;
+    position: relative;
 }
 
 /*.main-text-content {
@@ -152,22 +157,39 @@
 
 /*Преимущества*/
 
+.main-advantages {
+    background: #f2f3f8;
+    margin: 2rem 0;
+    padding: 4rem 0;
+}
+
 .main-advantages-list {
-    width: 100%;
+    max-width: 100%;
     display: flex;
     justify-content: center;
 }
 
 .main-advantages-items {
-    margin: 0 7rem;
+    margin-left: 8rem;
     text-decoration: none;
     list-style-type: none;
 }
 
-.main-advantages {
-    background: #f2f3f8;
-    margin: 2rem 0;
-    padding: 4rem 0;
+.main-advantages-items h3 {
+    font-weight: 700;
+    font-family: 'Merriweather', serif;
+    color: #131415;
+    font-size: 18px;
+    line-height: 0.8;
+}
+
+.main-advantages-text {
+    margin-top: 0.5rem;
+    font-family: 'Lato', sans-serif;
+    color: #9b9b9b;
+    font-size: 14px;
+    line-height: 1.7;
+    width: 250px;
 }
 
 .main-advantages-title {
@@ -191,6 +213,7 @@
     position: relative;
     top: 3rem;
     left: -7rem;
+    max-width: 100%;
 }
 
 /*Отзывы*/
@@ -219,6 +242,7 @@
 
 .reviews-container-slider {
     width: 9999px;
+    position: relative;
 }
 
 .reviews-container h3 {
@@ -265,7 +289,8 @@
 
 .reviews-container .nav {
     position: absolute;
-    left: 47%;
+    left: 50%;
+    transform: translate(-50%);
     bottom: 0.5rem;
 }
 
@@ -289,103 +314,82 @@
 
 /*Gallery*/
 
-/*.gallery{
-
-}
-
-.main-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 4.6rem;
-}
-
-.main-gallery-header{
-    width: 400px;
-    text-align: center;
-}
-
-.main-gallery-header h4 {
-    margin-top: 1.7rem;
-    font-weight: 700;
-    font-family: 'Merriweather', serif;
-    color: #131415;
-    font-size: 45px;
-    line-height: 1;
-}
-
-.main-gallery-header p {
-    margin-top: 1.3rem;
-    font-weight: 400;
-    font-family: 'Merriweather', serif;
-    color: #9b9b9b;
-    font-size: 16px;
-    line-height: 1.4;
-}
-
-.main-gallery-image-small {
-    width: 400px;
-    height: 270px;
-}
-
-.main-gallery-image-big {
-    width: 400px;
-    height: 395px;
-}
-
-.main-gallery-image-basic{
-    position: relative;
-    top: -6.2rem;
-    width: 400px;
-    height: 495px;
-}
-
-.main-gallery-padding {
-    padding: 15px 15px;
-}*/
-
-/*Gallery*/
-
 .gallery {
-
+    max-width: 1500px;
 }
 
 .main-gallery {
     display: flex;
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;*/
     justify-content: center;
     margin-top: 4.6rem;
     font-size: 0;
     position: relative;
+    width: 100%;
+}
+
+.main-gallery-margin {
+    margin: 0;
 }
 
 .gallery-image-container {
     position: relative;
     cursor: pointer;
+    margin: 10px 10px;
+    display: inline-block;
+    overflow: hidden;
+    /*max-width: 100%;*/
+    /*height: auto;*/
 }
 
-.main-gallery-image-small {
+.gallery-size-small {
     width: 400px;
     height: 270px;
-    object-fit: cover;
 }
 
-.main-gallery-image-big {
+.gallery-size-large {
     width: 400px;
     height: 395px;
-    object-fit: cover;
 }
 
-.main-gallery-image-basic {
-    position: relative;
-    top: -6.2rem;
+.gallery-size-basic {
     width: 400px;
     height: 495px;
-    object-fit: cover;
+    position: relative;
+    top: -6.2rem;
 }
 
-.main-gallery-padding {
-    padding: 15px 15px;
+.main-gallery-image {
+    /*width: 100%;*/
+    /*height: 100%;*/
+    object-fit: cover;
+    transition: 2s;
+    display: block;
+    /*max-width: 100%;*/
+    max-width: 100%;
+    height: auto;
+}
+
+.main-gallery-image:hover {
+    transform: scale(1.1);
+}
+
+.gallery-image-container:before {
+    width: 80%;
+    height: 80%;
+    content: '';
+    border: 1px solid white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    /*z-index: ;*/
+}
+
+.gallery-image-container:hover:before {
+    opacity: 1;
+    transition: all .5s ease-in-out;
 }
 
 .gallery-image-container:after {
@@ -395,7 +399,7 @@
     content: '';
     top: 0;
     left: 0;
-    background: orange;
+    background: yellowgreen;
     opacity: 0;
     transition: all 450ms ease-out;
     -webkit-transform: rotateY(90deg);
@@ -403,7 +407,7 @@
 }
 
 .gallery-image-container:hover:after {
-    opacity: 0.9;
+    opacity: 0.6;
     /*-webkit-transform: rotateY(0deg);*/
     transform: rotateY(0deg);
 }
@@ -411,6 +415,10 @@
 .main-gallery-header {
     width: 400px;
     text-align: center;
+}
+
+.gallery-header-margin {
+    margin: 10px 10px;
 }
 
 .main-gallery-header h4 {
@@ -439,7 +447,6 @@
     bottom: 0;
     left: 0;
     right: 0;
-    margin: auto;
     display: none;
 }
 
@@ -447,40 +454,27 @@
     display: inline-block;
 }
 
-.zoom {
+.zoom-small, .zoom-large, .zoom-basic {
     position: absolute;
-    width: 40px;
-    height: 40px;
     border: 1px solid #fff;
     box-sizing: border-box;
     border-radius: 5px;
     z-index: 2;
 }
 
-.zoom:hover {
-    background: #25a6f7;
+.zoom-small {
+    width: 400px;
+    height: 270px;
 }
 
-.zoom {
-    left: 0;
+.zoom-large {
+    width: 400px;
+    height: 395px;
 }
 
-.zoom:after {
-    display: inline-block;
-    font: normal normal normal 14px/1 "fontello";
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-rendering: auto;
-
-    color: #fff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.zoom:after {
-    content: "\e802"
+.zoom-basic {
+    width: 400px;
+    height: 495px;
 }
 
 .overlay {
@@ -489,8 +483,8 @@
     right: 0;
     bottom: 0;
     left: 0;
-    opacity: 0.9;
-    background: #fff;
+    opacity: 0.7;
+    background: black;
     display: none;
 }
 
@@ -501,10 +495,9 @@
 .popup {
     position: fixed;
     width: 100%;
-    max-width: 1170px;
-    border: 1px solid grey;
+    max-width: 1000px;
+    border: 1px solid black;
     padding: 5px;
-    box-sizing: border-box;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -517,12 +510,13 @@
 }
 
 .full-image {
-    width: 1170px;
+    width: 1000px;
     max-width: 100%;
     /*min-width: 360px;*/
-    max-height: 550px;
+    max-height: 620px;
     object-fit: cover;
     display: none;
+
 }
 
 .full-image.active {
@@ -531,29 +525,24 @@
 
 .close {
     position: absolute;
-    top: -20px;
-    right: 20px;
+    top: -40px;
+    right: 10px;
     width: 40px;
     height: 40px;
     line-height: 40px;
-    background: #25a6f7;
-    color: white;
+    color: silver;
 }
 
 .close:after {
-    font: normal normal normal 14px/1 "fontello";
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    content: "\e801";
-
+    content: '\2716';
     display: inline-block;
-    font-size: 15px;
-    vertical-align: middle;
+    font-size: 20px;
+    margin-left: 50%;
+    transform: translate(-50%);
 }
 
 .close:hover {
-    background: #f74c26;
+    color: white;
     cursor: pointer;
 }
 
@@ -604,6 +593,7 @@
     margin: 0;
     padding: 1.4rem 0 4.2rem 0;
     background: #f2f3f8;
+    width: 100%;
 }
 
 .blog__title {
@@ -622,16 +612,31 @@
 .blog__content {
     display: flex;
     justify-content: center;
+    /*flex-wrap: wrap;*/
+    max-width: 100%;
     /*margin-left: 4.6rem; !*при использовании свойств флекса, контент при сужении начинал вылезать за границу экрана, не полчилось по другому придумать решение этой проблемы и центрирование элементов кроме отступов слева и  position: absolute;, подскажите как равильно разрешить эту ситуацию и реализовывать адаптив в данном случае?*!*/
+}
+
+.column {
+
 }
 
 .item-blog {
     padding: 0 15px;
 }
 
+.item-blog__image {
+    /*width: 25rem;*/
+    /*height: 20rem;*/
+}
+
 .item-blog__image img { /*не могу понять как сделать картинки сжимающимися при уменьшении масштабов экрана*/
-    width: 25rem;
-    height: 20rem;
+    /*max-width: 100%;*/
+    /*max-height: 100%;*/
+    /*width: 25rem;*/
+    /*height: 20rem;*/
+    max-width: 100%;
+    height: auto;
 }
 
 .item-blog__text {
@@ -639,6 +644,7 @@
     top: -19px;
     padding-bottom: 1.5rem;
     background: white;
+    max-width: 100%;
 }
 
 .item-blog__data {
@@ -679,63 +685,217 @@
 }
 
 .item-blog__title:hover, .item-blog__link:hover {
-    color: orange;
+    color: yellowgreen;
+    transition: 0.5s;
 }
 
-/*@media screen and (max-width: 1160px) {
+/*media*/
+
+@media screen and (max-width: 1130px) {
+    /*introduction*/
+    .main-introduction {
+        margin-left: 1rem;
+    }
+
+    .main-introduction-image img {
+        width: 400px;
+    }
+
+    .main-introduction-content {
+        top: 5rem;
+        left: 3rem;
+    }
+
+    .main-introduction-title {
+        font-size: 2.5rem;
+    }
+
+    .main-introduction-content h3 {
+        font-size: 1rem;
+    }
+
+    .content-button-position {
+        bottom: 1.5rem;
+    }
+
+    /*.main-advantages-list {
+         margin-left: 20%;
+     }*/
+
+    /*video*/
+    .main-banner-video {
+        min-height: 60vh;
+    }
+
+    /*blog*/
+    .item-blog__title {
+        font-size: 15px;
+    }
+
+    .item-blog__data {
+        line-height: 0;
+    }
+
+    .title {
+        font-size: 30px;
+    }
+
+    .blog__title {
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    /*gallery*/
+    .main-gallery-header h4 {
+        font-size: 30px;
+    }
+
+    .main-gallery-header p {
+        font-size: 13px;
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+    /*introduction*/
+    .fas {
+        font-size: 45px;
+        top: 1.2rem;
+    }
+
     .main-introduction p {
+        left: 3.5rem;
+    }
+
+    .main-introduction-title {
+        font-size: 2rem;
+    }
+
+    .main-introduction-content h3 {
+        font-size: 0.8rem;
+    }
+
+    .main-introduction-content p {
         line-height: 1.4;
-        margin-right: 6rem; /*какие варианты для смещения текста при сжатии можно еще использовать?*/
-/*}
+    }
 
-.main-introduction-banner-border {
-    margin-left: 1rem;
-}
-}
+    .main-introduction-image img {
+        width: 350px;
+    }
 
-/*@media screen and (max-width: 1030px) { /*как сделать фото адаптивным, кпопку и границу, чтобы сужались вместе с уменьшать экрана*/
-/*.main-introduction-banner-border {
-    width: 400px;
-    height: 390px;
-    padding: 22px;
-}
+    .main-introduction-content {
+        top: 4rem;
+    }
 
-.main-introduction-banner-border img { /*как сделать фото адаптивным, кпопку и границу, чтобы сужались вместе с уменьшать экрана*/
-/*  width: 372px;
-  padding: 10px;
-}
+    /*advantages*/
+    .main-advantages-items h3 {
+        font-size: 1rem;
+    }
 
-.main-introduction-title {
-  margin-top: 0;
-}
+    .main-advantages-title {
+        font-size: 2rem;
+    }
 
-.main-introduction-title {
-  font-size: 1.9rem;
-}
+    .main-advantages-number {
+        font-size: 45px;
+    }
 
-.main-introduction h3 {
-  margin-top: 1rem;
-  font-size: 0.95rem;
+    .main-banner-video {
+        min-height: 50vh;
+    }
 }
 
-.main-introduction p {
-  margin-top: 1rem;
-}
+@media screen and (max-width: 780px) {
+    /*introduction*/
+    .main-introduction {
+        display: inline-block;
+    }
+
+    .main-introduction-image {
+        text-align: center;
+    }
+
+    .main-introduction-image img {
+        width: 485px;
+        max-width: 100%;
+    }
+
+    .main-introduction-content {
+        top: 1rem;
+        left: 1rem;
+        padding-right: 2rem;
+        width: 100%;
+    }
+
+    .main-introduction {
+        margin: 3rem 2rem;
+    }
+
+    /*advantages*/
+    .main-advantages-list {
+        display: inline-block;
+        /*float: right;*/
+    }
+
+    /*.main-advantages-mobile-position {*/
+        /*display: flex;*/
+        /*flex-direction: column;*/
+        /*align-items: flex-end;*/
+    /*}*/
+
+    .main-advantages-text {
+        width: 100%;
+    }
+
+    .main-advantages-number {
+        font-size: 35px;
+        left: -5rem;
+        top: 2rem;
+    }
+
+    .main-advantages-items {
+        margin-left: 6rem;
+    }
+
+    /*main-video*/
+    .main-banner-video {
+        min-height: 42vh;
+    }
+
+    /*blog*/
+    .blog__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item-blog__data {
+        line-height: 1.7;
+    }
+
+    .item-blog__title {
+        font-size: 20px;
+    }
+
+    /*gallery*/ /*проблемы с выездом за экран при сужении, из за флекса, постораться центрировать по другому, разобраться почему в блоге все работает норм*/
+    .main-gallery {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery-size-basic {
+        top: 0;
+    }
+
+
+
 }
 
-@media screen and (max-width: 866px) {
-.fas {
-  font-size: 45px;
+@media screen and (max-width: 480px) {
+    .main-advantages-number {
+        font-size: 32px;
+        left: -5rem;
+    }
 }
 
-.main-introduction p {
-  bottom: 3rem;
-  left: 4.5rem;
-}
-}
-
-@media screen and (max-width: 792px) {
-.main-introduction {
-  display: block;
-}
-}*/

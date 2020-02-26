@@ -15,7 +15,7 @@ body {
     flex-wrap: wrap;
     align-items: center;
     background: white;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
 }
 
 .main-header-logo {
@@ -30,6 +30,7 @@ body {
 
 .main-nav {
     margin: auto;
+
 }
 
 .main-nav-items {
@@ -42,8 +43,11 @@ body {
 
 .main-nav-item a {
     text-decoration: none;
-    color: black;
     padding: 1.9rem;
+    font-family: 'Merriweather', serif;
+    color: #131415;
+    font-size: 1rem;
+
 }
 
 .main-nav-item a:hover {
@@ -80,7 +84,7 @@ body {
     }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 780px) {
     .toggle-button {
         width: 1.8rem;
         background: transparent;
@@ -99,8 +103,8 @@ body {
 
     .toggle-button__bar {
         width: 100%;
-        height: 0.15rem;
-        background: black;
+        height: 0.19rem;
+        background: greenyellow;
         display: block;
         margin: 0.4rem 0;
     }

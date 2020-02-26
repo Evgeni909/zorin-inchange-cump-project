@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>InChange Project Camp</title>
   <link rel="shortcut icon" href="../favicon.jpg">
   <link rel="stylesheet" href="beanInChanger.css">
@@ -33,7 +34,7 @@
         <a href="index.html">Be an InChange</a>
       </li>
       <li class="main-nav-item">
-        <a href="#">Blog</a>
+        <a href="../blog/index.html">Blog</a>
       </li>
       <li class="main-nav-item">
         <a href="../aboutus/index.html">About us</a>
@@ -69,7 +70,7 @@
       <a class="main-button content-button-position" href="#">Apply Now</a>
     </div>
     <div class="participation-introduction-banner-border">
-      <img src="../image/template/banner1.jpg">
+      <img src="../image/main.webp">
     </div>
   </section>
 
@@ -125,17 +126,17 @@
     </div>
   </section>
 
-
   <section class="accommodation">
     <h4 class="main-title accommodation-position">Accommodation</h4>
     <div class="main-accommodation">
+
       <div class="accommodation-image-container">
         <img src="../image/accommodation/1.webp" alt="">
         <div class="hover-buttons">
           <a href="#img-1" class="zoom"></a>
         </div>
       </div>
-      <div class="accommodation-image-container accommodation-image-container-position">
+      <div class="accommodation-text-container accommodation-image-container-position">
         <p>​The camp takes place in the quiet corner <br> in Meliõhi - one of the most beautiful and <br>  clean
           beach of Malta.
           The house is <br> located on the cliff from where you can <br> overlook the seaside.</p>
@@ -143,20 +144,20 @@
       <div class="accommodation-image-container">
         <img src="../image/accommodation/2.webp" alt="">
         <div class="hover-buttons">
-          <a href="#img-1" class="zoom"></a>
+          <a href="#img-2" class="zoom"></a>
         </div>
       </div>
-      <div class="accommodation-image-container accommodation-image-container-position">
+      <div class="accommodation-text-container accommodation-image-container-position">
         <p>​Inside of the house there are several <br> bedrooms  and toilets, fully equipped kitchen, <br> work area,
           wide veranda with <br> the view to the gulf, swimming pool with <br> sun loungers and parking.</p>
       </div>
       <div class="accommodation-image-container">
         <img src="../image/accommodation/3.webp" alt="">
         <div class="hover-buttons">
-          <a href="#img-1" class="zoom"></a>
+          <a href="#img-3" class="zoom"></a>
         </div>
       </div>
-      <div class="accommodation-image-container accommodation-image-container-position">
+      <div class="accommodation-text-container accommodation-image-container-position">
         <p>​Shops, cafés and beach are in walking <br> distance.
           Free accommodation in the rooms for <br>( 2-3 people boys and girls separately). <br>​​
           Fast and stable Wi-Fi.</p>
@@ -164,10 +165,10 @@
       <div class="accommodation-image-container">
         <img src="../image/accommodation/4.webp" alt="">
         <div class="hover-buttons">
-          <a href="#img-1" class="zoom"></a>
+          <a href="#img-4" class="zoom"></a>
         </div>
       </div>
-      <div class="accommodation-image-container accommodation-image-container-position">
+      <div class="accommodation-text-container accommodation-image-container-position">
         <p>​Malta <br>
           Mellieha <br>
           23 J Kepler Street <br>
@@ -177,13 +178,22 @@
       <div class="accommodation-image-container">
         <img src="../image/accommodation/5.webp" alt="">
         <div class="hover-buttons">
-          <a href="#img-1" class="zoom"></a>
+          <a href="#img-5" class="zoom"></a>
         </div>
+      </div>
+
+
+      <div class="overlay"></div>
+      <div class="popup">
+        <img id="img-1" class="full-image" src="../image/accommodation/1.webp" alt="">
+        <img id="img-2" class="full-image" src="../image/accommodation/2.webp" alt="">
+        <img id="img-3" class="full-image" src="../image/accommodation/3.webp" alt="">
+        <img id="img-4" class="full-image" src="../image/accommodation/4.webp" alt="">
+        <img id="img-5" class="full-image" src="../image/accommodation/5.webp" alt="">
+        <span class="close"></span>
       </div>
     </div>
   </section>
-
-
 
 
   <section class="main-conditions">
@@ -218,8 +228,6 @@
     </div>
     </div>
   </section>
-
-
 </main>
 
 
@@ -256,5 +264,11 @@
     <p>InChange 2020. <a href="#">Privacy Policy</a></p>
   </div>
 </footer>
+
+<script src="../js/jquery-3.2.1.min.js"></script>
+<script src="../js/jquery.vide.min.js"></script>
+<script src="../js/main-js.js"></script>
+<script src="../shared.js"></script>
+<script src="beanInChanger.js"></script>
 </body>
 </html>

@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>InChange Project Camp</title>
   <link rel="shortcut icon" href="favicon.jpg">
   <link rel="stylesheet" href="main.css">
@@ -10,6 +11,7 @@
   <script src="https://kit.fontawesome.com/11a0fe2ce7.js" crossorigin="anonymous"></script>
 </head>
 <body>
+<div class="backdrop"></div>
 <header class="main-header">
   <div>
     <a href="index.html" class="main-header-logo">
@@ -33,7 +35,7 @@
         <a href="beanInChanger/index.html">Be an InChange</a>
       </li>
       <li class="main-nav-item">
-        <a href="#">Blog</a>
+        <a href="blog/index.html">Blog</a>
       </li>
       <li class="main-nav-item">
         <a href="aboutus/index.html">About us</a>
@@ -63,7 +65,7 @@
       <a href="#">About us</a>
     </li>
   </ul>
-</nav>!-->
+</nav>-->
 <main>
   <section class="main-banner">
   <div class="main-banner-video" data-vide-bg="video/1"></div>
@@ -75,16 +77,16 @@
   </div>*/-->
 
   <section class="main-introduction">
-    <div class="main-introduction-banner-border">
+    <div class="main-introduction-image">
       <img src="image/template/banner1.jpg">
     </div>
     <div class="main-introduction-content">
       <h1 class="main-introduction-title">About our camp</h1>
       <h3>We create technology aimed changing the world in Malta</h3>
       <i class="fas fa-quote-right"></i>
-      <p>We want to bring together people from varius fields - design, <br>
-        programming, journalism and provide them with the opportunity <br> to contribute to the development of
-        world-changing communities <br> of all different shapes and sizes.</p>
+      <p>We want to bring together people from varius fields - design,
+        programming, journalism and provide them with the opportunity to contribute to the development of
+        world-changing communities of all different shapes and sizes.</p>
       <a class="main-button content-button-position" href="#">Read More</a>
     </div>
   </section>
@@ -112,27 +114,31 @@
   <section class="main-advantages">
     <h3 class="main-advantages-title">Our advantages</h3>
     <section class="main-advantages-list">
-      <div class="main-advantages-items">
+      <div class="main-advantages-items advantages-position-1">
+        <div>
         <p class="main-advantages-number">01</p>
         <h3>Accommodation</h3>
-        <p>Free accommodation in a like- <br> minded community of innovators</p>
+        <p class="main-advantages-text">Free accommodation in a like-minded community of innovators</p>
+        </div>
+        <div class="main-advantages-mobile-position">
         <p class="main-advantages-number">02</p>
         <h3>Accommodation</h3>
-        <p>Free accommodation in a like- <br> minded community of innovators</p>
+        <p class="main-advantages-text">Free accommodation in a like-minded community of innovators</p>
+        </div>
         <p class="main-advantages-number">03</p>
         <h3>Accommodation</h3>
-        <p>Free accommodation in a like- <br> minded community of innovators</p>
+        <p class="main-advantages-text">Free accommodation in a like-minded community of innovators</p>
       </div>
-      <div class="main-advantages-items">
+      <div class="main-advantages-items advantages-position-2">
         <p class="main-advantages-number">04</p>
-        <h3>Accommodation</h3>
-        <p>Free accommodation in a like- <br> minded community of innovators</p>
+        <h3 class="main-advantages-text">Accommodation</h3>
+        <p class="main-advantages-text">Free accommodation in a like-minded community of innovators</p>
         <p class="main-advantages-number">05</p>
         <h3>Accommodation</h3>
-        <p>Free accommodation in a like- <br> minded community of innovators</p>
+        <p class="main-advantages-text">Free accommodation in a like-minded community of innovators</p>
         <p class="main-advantages-number">06</p>
         <h3>Accommodation</h3>
-        <p>Free accommodation in a like- <br> minded community of innovators</p>
+        <p class="main-advantages-text">Free accommodation in a like-minded community of innovators</p>
       </div>
     </section>
   </section>
@@ -190,67 +196,56 @@
     </div>
   </section>
 
-  <!--<section class="gallery">
-    <div class="main-gallery">
-      <img src="image/image3.png" alt="" class="main-gallery-image-small main-gallery-padding">
-      <div class="main-gallery-header main-gallery-padding">
-        <h4>Our Gallery</h4>
-        <p>Take a look at our parishioners!</p>
-      </div>
-      <img src="image/image1.png" alt="" class="main-gallery-image-small main-gallery-padding">
-      <img src="image/image2.png" alt="" class="main-gallery-image-big main-gallery-padding">
-      <img src="image/image3.png" alt="" class="main-gallery-image-basic main-gallery-padding">
-      <img src="image/image3.png" alt="" class="main-gallery-image-big main-gallery-padding">
-    </div>
-  </section>-->
-
   <section class="gallery">
     <div class="main-gallery">
-      <div class="gallery-image-container">
-        <img src="image/image3.png" alt="" class="main-gallery-image-small main-gallery-padding">
+      <div class="gallery-image-container gallery-size-small">
+        <img src="image/main-gallery/gallery4.jpg" alt="" class="main-gallery-image main-gallery-padding"
+             width="400px" height="270px">
         <div class="hover-buttons">
-          <a href="#img-1" class="zoom"></a>
+          <a href="#img-1" class="zoom-small"></a>
         </div>
       </div>
-      <div class="main-gallery-header main-gallery-padding">
+      <div class="main-gallery-header gallery-header-margin">
         <h4>Our Gallery</h4>
         <p>Take a look at our parishioners!</p>
       </div>
-      <div class="gallery-image-container">
-        <img src="image/image3.png" alt="" class="main-gallery-image-small main-gallery-padding">
+      <div class="gallery-image-container gallery-size-small">
+        <img src="image/main-gallery/gallery5.jpg" alt="" class="main-gallery-image main-gallery-padding"
+             width="400px" height="270px">
         <div class="hover-buttons">
-          <a href="#img-1" class="zoom"></a>
+          <a href="#img-2" class="zoom-small"></a>
         </div>
       </div>
-      <div class="gallery-image-container">
-        <img src="image/image3.png" alt="" class="main-gallery-image-big main-gallery-padding">
+    </div>
+    <div class="main-gallery main-gallery-margin">
+      <div class="gallery-image-container gallery-size-large">
+        <img src="image/main-gallery/gallery2.jpg" alt="" class="main-gallery-image main-gallery-padding"
+             width="400px" height="395px">
         <div class="hover-buttons">
-          <a href="#img-1" class="zoom"></a>
+          <a href="#img-3" class="zoom-large"></a>
         </div>
       </div>
-      <div class="gallery-image-container">
-        <img src="image/image3.png" alt="" class="main-gallery-image-basic main-gallery-padding">
+      <div class="gallery-image-container gallery-size-basic">
+        <img src="image/main-gallery/gallery1.jpg" alt="" class="main-gallery-image main-gallery-padding"
+             width="400px" height="495px">
         <div class="hover-buttons">
-          <a href="#img-1" class="zoom"></a>
+          <a href="#img-4" class="zoom-basic"></a>
         </div>
       </div>
-
-
-      <div class="gallery-image-container">
-        <img src="image/image3.png" alt="" class="main-gallery-image-big main-gallery-padding">
-        <div class="hover-buttons overlay popup" style="visibility: visible">
-          <a href="#img-1" class="zoom"></a>
+      <div class="gallery-image-container gallery-size-large">
+        <img src="image/main-gallery/gallery6.jpg" alt="" class="main-gallery-image main-gallery-padding"
+             width="400px" height="395px">
+        <div class="hover-buttons">
+          <a href="#img-5" class="zoom-large"></a>
         </div>
       </div>
-
       <div class="overlay"></div>
       <div class="popup">
-        <img id="img-1" class="full-image" src="image/image3.png" alt="">
-        <img id="img-2" class="full-image" src="image/image3.png" alt="">
-        <img id="img-3" class="full-image" src="image/image3.png" alt="">
-        <img id="img-4" class="full-image" src="image/image3.png" alt="">
-        <img id="img-5" class="full-image" src="image/image3.png" alt="">
-        <img id="img-6" class="full-image" src="image/image3.png" alt="">
+        <img id="img-1" class="full-image" src="image/main-gallery/gallery4.jpg" alt="">
+        <img id="img-2" class="full-image" src="image/main-gallery/gallery5.jpg" alt="">
+        <img id="img-3" class="full-image" src="image/main-gallery/gallery2.jpg" alt="">
+        <img id="img-4" class="full-image" src="image/main-gallery/gallery1.jpg" alt="">
+        <img id="img-5" class="full-image" src="image/main-gallery/gallery6.jpg" alt="">
         <span class="close"></span>
       </div>
     </div>
@@ -260,10 +255,10 @@
     <div class="blog__body">
       <div class="blog__title title">From The Blog</div>
       <div class="blog__content">
-        <div class="blog__column">
+        <div class="column">
           <div class="item-blog">
             <div class="item-blog__image">
-              <img src="image/image1.png" alt="post1">
+              <img src="image/image1.png" alt="post1" width="380px" height="320px">
             </div>
             <div class="item-blog__text">
               <p class="item-blog__data">November 12, 2017</p>
@@ -272,10 +267,10 @@
             </div>
           </div>
         </div>
-        <div class="blog__column">
+        <div class="column">
           <div class="item-blog">
             <div class="item-blog__image">
-              <img src="image/image2.png" alt="post1">
+              <img src="image/image2.png" alt="post1" width="380px" height="320px">
             </div>
             <div class="item-blog__text">
               <p class="item-blog__data">March 10, 2018</p>
@@ -284,10 +279,10 @@
             </div>
           </div>
         </div>
-        <div class="blog__column">
+        <div class="column">
           <div class="item-blog">
             <div class="item-blog__image">
-              <img src="image/image3.png" alt="post1">
+              <img src="image/image3.png" alt="post1" width="380px" height="320px">
             </div>
             <div class="item-blog__text">
               <p class="item-blog__data">May 27, 2018</p>
@@ -336,9 +331,11 @@
   </div>
 </footer>
 
-<script src="js/main-js.js"></script>
+
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/jquery.vide.min.js"></script>
+<script src="js/main-js.js"></script>
+<script src="shared.js"></script>
 
 </body>
 </html>
