@@ -30,11 +30,14 @@ body {
 
 .main-nav {
     margin: auto;
-
 }
 
 .main-nav-items {
     display: flex;
+}
+
+.mobile-nav {
+    display: none;
 }
 
 .main-nav-item {
@@ -47,7 +50,6 @@ body {
     font-family: 'Merriweather', serif;
     color: #131415;
     font-size: 1rem;
-
 }
 
 .main-nav-item a:hover {
@@ -113,33 +115,43 @@ body {
         color: yellow;
     }
 
-    .main-header, .main-nav-items {
+    .main-nav, .main-nav-items {
+        display: none;
+    }
+
+    .main-header, .mobile-nav__items {
+        display: flex;
         flex-direction: column;
     }
 
-    .main-nav-items {
+    .mobile-nav__items {
         padding: 0.5rem;
         /*display: none;*/
+        list-style-type: none;
     }
 
-    .main-nav-item {
+    .mobile-nav__item {
         margin: 0.1rem;
     }
 
-    .main-nav {
+    .mobile-nav {
         border: 2px solid yellow;
         width: 93%;
+        /*display: inline-block;*/
     }
 
-    .main-nav-item a:hover {
+    .mobile-nav__item a:hover {
         color: white;
-        background: yellow;
+        background: greenyellow;
     }
 
-    .main-nav-item a {
+    .mobile-nav__item a {
         display: block;
         padding: 0.1rem;
-        color: black;
+        text-decoration: none;
+        font-family: 'Merriweather', serif;
+        color: #131415;
+        font-size: 1rem;
     }
 
     .main-header-logo {

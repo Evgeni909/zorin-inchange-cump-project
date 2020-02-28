@@ -98,27 +98,88 @@
     padding-bottom: 90px;
 }
 
-/*introduction-about*/
+/*!*introduction-about*!*/
 
-.about-introduction {
+/*.about-introduction {*/
+    /*width: 100%;*/
+/*}*/
+
+/*.about-introduction-position {*/
+    /*display: flex;*/
+    /*justify-content: center;*/
+/*}*/
+
+/*.about-introduction-banner-border {*/
+    /*padding: 19px;*/
+    /*border: 4px solid yellow;*/
+    /*align-items: center;*/
+    /*margin: 5rem 0 0 5rem;*/
+/*}*/
+
+/*.about-introduction-banner-border img {*/
+    /*width: 472px;*/
+    /*height: 466px;*/
+/*}*/
+
+/*!*.css-adaptive { адаптив для картинки*/
+    /*display: block;*/
+    /*max-width: 100%;*/
+    /*height: auto;*/
+/*}*!*/
+
+/*.about-introduction-content {*/
+    /*margin-top: 3rem;*/
+    /*margin-left: 3rem;*/
+    /*width: 600px;*/
+/*}*/
+
+/*.about-introduction-title {*/
+    /*font-size: 2.8rem;*/
+    /*margin-top: 3rem;*/
+    /*line-height: 1;*/
+    /*font-family: 'Merriweather', serif;*/
+    /*text-align: center;*/
+/*}*/
+
+/*.about-introduction p {*/
+    /*color: #9b9b9b;*/
+    /*font-size: 0.9rem;*/
+    /*line-height: 1.7;*/
+    /*margin-top: 1.5rem;*/
+    /*font-family: 'Lato', sans-serif;*/
+/*}*/
+
+/*.content-button-position { !*как поднять кнопку не через поситион*!*/
+    /*padding: 0.7rem 2.5rem;*/
+    /*margin-top: 2rem;*/
+/*}*/
+
+.participation-introduction {
     width: 100%;
-}
-
-.about-introduction-position {
-    display: flex;
+    /*display: flex;*/
+    margin-top: 5rem;
+    margin-bottom: 8rem;
     justify-content: center;
 }
 
-.about-introduction-banner-border {
-    padding: 19px;
+.participation-introduction-banner-border {
     border: 4px solid yellow;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    margin: 5rem 0 0 5rem;
+    padding: 19px;
+    height: 100%;
+    margin: 0 5rem 0 3rem;
+    max-height: 480px;
+    float: right;
+
 }
 
-.about-introduction-banner-border img {
-    width: 472px;
-    height: 466px;
+.participation-introduction-banner-border img {
+    max-width: 100%;
+    height: auto;
+    background-size: cover;
+    max-height: 400px;
 }
 
 /*.css-adaptive { адаптив для картинки
@@ -127,24 +188,29 @@
     height: auto;
 }*/
 
-.about-introduction-content {
-    margin-top: 3rem;
-    margin-left: 3rem;
-    width: 600px;
+.participation-introduction-content {
+   margin: 2rem 5rem 0 5rem;
 }
 
-.about-introduction-title {
+.participation-introduction-title {
     font-size: 2.8rem;
     margin-top: 3rem;
     line-height: 1;
     font-family: 'Merriweather', serif;
-    text-align: center;
 }
 
-.about-introduction p {
+.participation-introduction h3 {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    font-weight: 400;
+    margin-top: 1.5rem;
+    font-family: 'Merriweather', serif;
+}
+
+.participation-introduction p {
     color: #9b9b9b;
     font-size: 0.9rem;
-    line-height: 1.7;
+    line-height: 1.5;
     margin-top: 1.5rem;
     font-family: 'Lato', sans-serif;
 }
@@ -152,6 +218,7 @@
 .content-button-position { /*как поднять кнопку не через поситион*/
     padding: 0.7rem 2.5rem;
     margin-top: 2rem;
+    position: relative;
 }
 
 
@@ -195,4 +262,16 @@
 .main-team-content em {
     display: inline-block;
     margin-top: 0.3rem;
+}
+
+@media screen and (max-width: 1130px) {
+    /*main-banner*/
+    .background-banner h3 {
+        font-size: 2rem;
+    }
+
+    .background-banner a, .background-banner span {
+        font-size: 15px;
+    }
+
 }

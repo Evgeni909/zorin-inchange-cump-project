@@ -1,5 +1,12 @@
 $(function() {
     $('.toggle-button').click(function() {
-        $('.main-nav').slideToggle();
+        $('.mobile-nav').slideToggle();
+    });
+});
+
+
+$(function() {
+    $('.toggle-button').click(function() {
+        $('.mobile-nav').slideToggle();
     });
 });

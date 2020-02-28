@@ -107,19 +107,21 @@
 }
 
 .participation-introduction-banner-border {
-    max-width: 100%;
     border: 4px solid yellow;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 19px;
-    height: auto;
+    height: 100%;
     margin: 3rem 0 0 3rem;
+    max-height: 566px;
 }
 
 .participation-introduction-banner-border img {
-    width: 472px;
-    height: 350px;
+    max-width: 100%;
+    height: auto;
+    background-size: cover;
+    max-height: 466px;
 }
 
 /*.css-adaptive { адаптив для картинки
@@ -151,14 +153,16 @@
 .participation-introduction p {
     color: #9b9b9b;
     font-size: 0.9rem;
-    line-height: 1.7;
+    line-height: 1.5;
     margin-top: 1.5rem;
     font-family: 'Lato', sans-serif;
+    max-width: 500px;
 }
 
 .content-button-position { /*как поднять кнопку не через поситион*/
     padding: 0.7rem 2.5rem;
     margin-top: 2rem;
+    position: relative;
 }
 
 /*conditions*/
@@ -179,11 +183,23 @@
     padding: 2rem;
     width: 350px;
     border: 3px solid #f2f3f8;
+    text-align: center;
+}
+
+.main-conditions-content img {
+    margin: 2rem 0;
 }
 
 .main-conditions-content:hover {
     border: 3px solid yellow;
     transition: 0.5s;
+}
+
+.main-subtitle-conditions {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.8;
 }
 
 .main-subtitle-position {
@@ -194,6 +210,7 @@
 .main-text-position {
     margin: 0.5rem 0;
     font-size: 1rem;
+    text-align: left;
 }
 
 /*Accommodation*/
@@ -204,11 +221,16 @@
 
 .main-accommodation {
     display: flex;
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;*/
     justify-content: center;
-    margin: 2rem 5rem;
     position: relative;
-    width: 90%;
+    width: 100%;
+}
+
+.main-title-accommodation {
+    font-size: 2.8rem;
+    line-height: 1;
+    font-family: 'Merriweather', serif;
 }
 
 .accommodation-image-container, .accommodation-text-container {
@@ -218,6 +240,13 @@
     cursor: pointer;
     display: inline-block;
     overflow: hidden;
+    /*max-height: 100%;*/
+    /*max-width: 100%;*/
+}
+
+.accommodation-text-container {
+    /*max-width: 100%;*/
+    /*height: auto;*/
 }
 
 .accommodation-image-container-position {
@@ -229,7 +258,9 @@
 
 .accommodation-image-container img {
     width: 100%;
-    height: 100%;
+    /*height: 100%;*/
+    max-width: 100%;
+    height: auto;
     object-fit: cover;
     transition: 2s;
     display: block;
@@ -287,6 +318,7 @@
     color: #9b9b9b;
     font-size: 15px;
     line-height: 1.4;
+    width: 90%;
 }
 
 .hover-buttons {
@@ -409,7 +441,7 @@
 
 .main-program-content {
     margin: 0 1rem;
-    padding: 2rem;
+    padding: 1rem;
     width: 350px;
 }
 
@@ -426,4 +458,185 @@
 .main-program-list {
     list-style-type: none;
     margin-left: 1rem;
+}
+
+@media screen and (max-width: 1130px) {
+    /*introduction*/
+    .participation-introduction-content {
+        margin-left: 1rem;
+    }
+
+    .main-introduction-image img {
+        width: 400px;
+    }
+
+    .participation-introduction-title {
+        font-size: 2rem;
+    }
+
+    .participation-introduction-content h3 {
+        font-size: 1rem;
+    }
+
+    .content-button-position {
+        bottom: -0.3rem;
+    }
+
+    .participation-introduction p {
+        line-height: 1.2;
+    }
+
+    .participation-introduction-banner-border {
+        margin-right: 1rem;
+    }
+
+    /*program*/
+    .title-program-position {
+        font-size: 2rem;
+    }
+
+    .main-subtitle {
+        font-size: 1rem;
+    }
+
+    .text-program-position, .main-program-list li {
+        font-size: 14px;
+    }
+
+    /*conditions*/
+    .conditions-position {
+        font-size: 2rem;
+    }
+
+    /*accommodation*/
+    .main-accommodation {
+        margin: 0 1rem;
+        padding-right: 2rem;
+    }
+
+    .main-title-accommodation {
+        font-size: 2rem;
+    }
+
+    .accommodation-text-container p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+
+    /*main-banner*/
+    .background-banner h3 {
+        font-size: 2rem;
+    }
+
+    .background-banner a, .background-banner span {
+        font-size: 15px;
+    }
+}
+
+
+
+@media screen and (max-width: 1000px) {
+
+    .participation-introduction-content h3 {
+        font-size: 0.8rem;
+    }
+
+    .participation-introduction-content p {
+        line-height: 1.2;
+    }
+
+    .participation-introduction-banner-border img {
+        width: 350px;
+    }
+
+    .main-conditions-content .main-text {
+        font-size: 14px;
+    }
+
+    .main-subtitle-conditions {
+        font-size: 1rem;
+    }
+
+}
+
+
+@media screen and (max-width: 880px) {
+    .participation-mod-response {
+        display: none;
+    }
+
+    .content-button-position {
+        bottom: -1rem;
+    }
+
+    .accommodation-image-container, .accommodation-text-container {
+        width: 320px;
+        height: 240px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    /*introduction*/
+    .participation-introduction {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 3rem 1rem;
+        padding-right: 2rem;
+    }
+
+    .participation-introduction-banner-border {
+        text-align: center;
+        margin: 3rem 3rem 0 0;
+        width: 100%;
+    }
+
+    .participation-introduction-banner-border img {
+        width: 485px;
+        max-width: 100%;
+    }
+
+    .participation-introduction p {
+        max-width: 100%;
+    }
+
+    .participation-introduction-title {
+        margin-top: 0;
+    }
+
+    /*program*/
+    .main-program-position {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .main-program-position {
+        padding: 1rem 0 1.5rem 0;
+    }
+
+    /*conditions*/
+    .main-conditions-position {
+        display: inline-block;
+        width: 100%;
+        padding-right: 1rem;
+    }
+
+    .main-conditions-content {
+        width: 98%;
+        margin-top: 1rem;
+    }
+
+    /*accommodation*/
+    .main-accommodation {
+       display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .accommodation-image-container, .accommodation-text-container {
+        width: 360px;
+        height: 270px;
+    }
 }

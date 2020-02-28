@@ -66,17 +66,21 @@
     display: flex;
     margin: 5rem 2rem;
     justify-content: center;
+    /*flex-direction: row-reverse;*/
 }
 
 .main-introduction-image {
     border: 4px solid yellow;
     padding: 19px;
-    /*height: auto;*/
-    /*max-width: 100%;*/
+    height: auto;
+    max-width: 100%;
 }
 
 .main-introduction-image img {
     /*max-width: 100%;*/
+    max-height: 100%;
+    max-width: 100%;
+    height: auto;
 }
 
 /*.css-adaptive { адаптив для картинки
@@ -232,6 +236,7 @@
     margin: 0 0 7px;
     position: relative;
     text-align: center;
+    max-width: 100%;
 }
 
 .reviews-container-slider,
@@ -241,8 +246,10 @@
 }
 
 .reviews-container-slider {
-    width: 9999px;
+    width: 9999px; /*проблема здесь почему должно быть именно 9999*/
     position: relative;
+    max-width: 100%; /*не двигается блок с отзывом при сужении экрана без мак видс, с ним не отображаются остальные отзывы*/
+    height: auto;
 }
 
 .reviews-container h3 {
@@ -261,12 +268,16 @@
     width: 1200px;
     height: 520px;
     position: relative;
+    max-width: 100%;
+
 }
 
 .reviews-container-slider-content img {
     border-radius: 50%;
     margin-top: 3rem;
     width: 200px;
+    max-width: 100%;
+    height: auto;
 }
 
 .reviews-container-slider-content h4 {
@@ -284,7 +295,7 @@
     color: #9b9b9b;
     line-height: 1.3;
     letter-spacing: 0;
-    margin-top: 1rem;
+    margin: 1rem 1rem 0 1rem;
 }
 
 .reviews-container .nav {
@@ -326,10 +337,11 @@
     font-size: 0;
     position: relative;
     width: 100%;
+    height: 100%;
 }
 
 .main-gallery-margin {
-    margin: 0;
+    margin: 0
 }
 
 .gallery-image-container {
@@ -338,8 +350,8 @@
     margin: 10px 10px;
     display: inline-block;
     overflow: hidden;
-    /*max-width: 100%;*/
-    /*height: auto;*/
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .gallery-size-small {
@@ -357,6 +369,7 @@
     height: 495px;
     position: relative;
     top: -6.2rem;
+    max-height: 100%;
 }
 
 .main-gallery-image {
@@ -367,7 +380,7 @@
     display: block;
     /*max-width: 100%;*/
     max-width: 100%;
-    height: auto;
+    height: 100%; /*Solution!*/
 }
 
 .main-gallery-image:hover {
@@ -754,6 +767,18 @@
         font-size: 13px;
     }
 
+    /*reviews*/
+    .reviews-container h3 {
+        font-size: 32px;
+    }
+
+    .reviews-container-slider-content h4 {
+        font-size: 20px;
+    }
+
+    .reviews-container-slider-content p {
+         font-size: 14px;
+    }
 }
 
 @media screen and (max-width: 1000px) {
@@ -809,6 +834,7 @@
     /*introduction*/
     .main-introduction {
         display: inline-block;
+        margin: 3rem 2rem;
     }
 
     .main-introduction-image {
@@ -827,9 +853,6 @@
         width: 100%;
     }
 
-    .main-introduction {
-        margin: 3rem 2rem;
-    }
 
     /*advantages*/
     .main-advantages-list {
@@ -888,8 +911,10 @@
         top: 0;
     }
 
-
-
+    /*reviews*/
+    .reviews-container-slider-content p {
+        font-size: 14px;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -897,5 +922,23 @@
         font-size: 32px;
         left: -5rem;
     }
+
+    /*reviews*/
+    .reviews-container-slider-content img {
+        width: 170px;
+    }
+
+    .main-gallery, .main-gallery-margin {
+        padding: 0 15px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    /*reviews*/
+    .reviews-container {
+        height: 575px;
+    }
+
+
 }
 
