@@ -19,10 +19,6 @@
     font-family: 'Lato', sans-serif;
 }
 
-.main-button-position { /*как расположить кнопку без деформации при сужении экрана, сейчас отстп снизу для р*/
-
-}
-
 .main-button:hover {
     background: orange;
     color: white;
@@ -124,12 +120,6 @@
     max-height: 466px;
 }
 
-/*.css-adaptive { адаптив для картинки
-    display: block;
-    max-width: 100%;
-    height: auto;
-}*/
-
 .participation-introduction-content {
     margin-top: 3rem;
     margin-left: 3rem
@@ -159,7 +149,7 @@
     max-width: 500px;
 }
 
-.content-button-position { /*как поднять кнопку не через поситион*/
+.content-button-position {
     padding: 0.7rem 2.5rem;
     margin-top: 2rem;
     position: relative;
@@ -216,12 +206,11 @@
 /*Accommodation*/
 
 .accommodation {
-    max-width: 1400px;
+    max-width: 100%;
 }
 
 .main-accommodation {
     display: flex;
-    /*flex-wrap: wrap;*/
     justify-content: center;
     position: relative;
     width: 100%;
@@ -240,13 +229,7 @@
     cursor: pointer;
     display: inline-block;
     overflow: hidden;
-    /*max-height: 100%;*/
-    /*max-width: 100%;*/
-}
-
-.accommodation-text-container {
-    /*max-width: 100%;*/
-    /*height: auto;*/
+    max-width: 100%;
 }
 
 .accommodation-image-container-position {
@@ -257,8 +240,6 @@
 }
 
 .accommodation-image-container img {
-    width: 100%;
-    /*height: 100%;*/
     max-width: 100%;
     height: auto;
     object-fit: cover;
@@ -267,7 +248,7 @@
 }
 
 .accommodation-image-container img:hover {
-    transform: scale(1.1);
+    transform: scale(1.1); /*Хотел реализовать увеличение картинки при наведении, но возникла проблема, я так понимаю из-за бэкграунда заданного через after*/
 }
 
 .accommodation-image-container:before {
@@ -280,7 +261,6 @@
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: 0;
-    /*z-index: ;*/
 }
 
 .accommodation-image-container:hover:before {
@@ -310,7 +290,7 @@
 
 .accommodation-position {
     text-align: center;
-    margin: 5rem;
+    margin: 5rem 0;
 }
 
 .accommodation-text-container p {
@@ -523,7 +503,6 @@
         line-height: 1.5;
     }
 
-
     /*main-banner*/
     .background-banner h3 {
         font-size: 2rem;
@@ -533,8 +512,6 @@
         font-size: 15px;
     }
 }
-
-
 
 @media screen and (max-width: 1000px) {
 
@@ -560,11 +537,7 @@
 
 }
 
-
 @media screen and (max-width: 880px) {
-    .participation-mod-response {
-        display: none;
-    }
 
     .content-button-position {
         bottom: -1rem;
@@ -620,7 +593,7 @@
     .main-conditions-position {
         display: inline-block;
         width: 100%;
-        padding-right: 1rem;
+        padding-right: 2rem;
     }
 
     .main-conditions-content {
@@ -630,7 +603,7 @@
 
     /*accommodation*/
     .main-accommodation {
-       display: flex;
+        display: flex;
         flex-direction: column;
         align-items: center;
     }
@@ -638,5 +611,22 @@
     .accommodation-image-container, .accommodation-text-container {
         width: 360px;
         height: 270px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .accommodation-image-container, .accommodation-text-container {
+        width: 227px;
+        height: 227px;
+
+    }
+
+    .accommodation-image-container img {
+        height: auto;
+        min-height: 227px;
+    }
+
+    .accommodation-text-container p {
+        line-height: 1.2;
     }
 }
